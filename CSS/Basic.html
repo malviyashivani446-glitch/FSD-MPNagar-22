@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
       /* Selectors */
       /* 
         1) Element Selector
@@ -44,7 +47,7 @@
       .secondaryText {
         color: white;
       }
-
+      /* Id selector  */
       #heading {
         /* color: red; */
       }
@@ -58,7 +61,10 @@
       h4 {
         color: yellow;
       }
-      /* Id selector  */
+      /* Attribute Selector */
+      [href="https://www.youtube.com/"] {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -75,7 +81,8 @@
     <h2 class="primaryBg primaryText">I am heading2 tag</h2>
     <h2>I am heading2.1 tag</h2>
     <p class="secondBg secondaryText">I am p2tag</p>
-
     <h4 class="blue red">I am heading 4</h4>
+
+    <a href="https://www.youtube.com/">Youtube</a>
   </body>
 </html>
