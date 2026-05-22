@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p {
+        color: blue;
+      } */
+      /* > direct child  */
+      /* space _ all childs  */
+      /* .parent > p {
+        color: blue;
+      }
+      .parent p {
+        color: red;
+      } */
+
+      div > p + p {
+        color: yellow;
+      }
+      div > p ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I am p0 tag</p>
+    <div class="parent">
+      <p>I am p1 tag</p>
+      <div class="child">
+        <p>I am p2 tag</p>
+        <p>I am p3 tag</p>
+        <p>I am p4 tag</p>
+        <div class="gc">
+          <p>I am p5 tag</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
