@@ -1,11 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Absolute units  */
+      /* .box {
+        height: 300px;
+        width: 200px;
+        border: 1px solid red;
+      } */
+
+      /* Relative Units  */
+      /*  vh and vw --> screen size   */
+      /* % (Percentage) --> Parent   */
+      /*  Em depends on parents size  */
+      /* rem depends on root element (HTML) */
+      .box {
+        width: 50vw;
+        height: 50vh;
+        border: 2px solid red;
+        font-size: 2rem;
+      }
+
+      .child {
+        width: 50%;
+        height: 50%;
+        border: 2px solid blue;
+          font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      TEXT
+      <div class="child">TEXT</div>
+    </div>
+  </body>
 </html>
