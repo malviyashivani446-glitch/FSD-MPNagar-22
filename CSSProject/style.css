@@ -114,15 +114,15 @@
   justify-content: center;
 }
 .mainHeading {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 .subheading {
-  font-size: 0.6rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 .tertiaryHeading {
-  font-size: 0.4rem;
+  font-size: 0.6rem;
 }
 .EmailAndButtonContainer {
   display: flex;
@@ -135,20 +135,33 @@
   border: 0.5px solid white;
   border-radius: 2px;
   background-color: rgb(0, 0, 0, 0.9);
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   padding: 4px;
   width: 60%;
+  height: 35px;
   outline: none;
   color: white;
+  padding-left: 10px;
 }
 
 .getStartedButton {
   width: 30%;
+  height: 35px;
   display: flex;
   margin-left: 5px;
   align-items: center;
   justify-content: center;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   border-radius: 2px;
   background-color: rgb(229, 9, 20);
+}
+
+.trendingNow {
+  background-color: black;
+  height: 50vh;
+  width: 100vw;
+  border-top: 2px solid rgb(229, 9, 20);
+  border-radius:  50% / 10%;
+
+  box-shadow: inset 2px 35px 15px -10px #121B40;
 }
