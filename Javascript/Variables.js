@@ -81,12 +81,47 @@
 
 //  var is function scoped and let and const are block scoped
 // var let and const are function scoped because
-//  function is also a block and let and const is block scoped 
+//  function is also a block and let and const is block scoped
 
-function abc() {
-  let a = 10;
-  console.log(a);
-}
+// Function -- the variables which can be accessed in a function is called function scop varinable
 
-abc();
+// function abc() {
+//   var a = 10;
+//   console.log(a);
+// }
+
+// abc();
+// console.log(a);
+
 console.log(a);
+console.log(b);
+var a = 100;
+var b = 99;
+console.log(a);
+console.log(b);
+function abc() {
+  console.log(a);
+  var a = 199;
+  b = 199;
+  console.log(a);
+  console.log(b);
+  function def() {
+    var x = 100;
+    console.log(x);
+    console.log(a);
+    console.log(b);
+    xyz();
+    function xyz() {
+      console.log(x);
+      console.log(a);
+      console.log(b);
+    }
+    b = 999;
+  }
+
+  def();
+}
+abc();
+console.log(x);
+console.log(a);
+console.log(b);
